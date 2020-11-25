@@ -1,5 +1,30 @@
-// const h1 = document.querySelector("h1").innerText = "Hi David"
+// Count Vowels
 
-setTimeout(() => {
-  document.querySelector('h1').innerHTML = 'Hi David'
-}, 3000)
+const countVowels = (str) => {
+  const vowels = 'aeiou'
+  let counter = 0
+
+  for (let elem of str) {
+    if (vowels.includes(elem.toLowerCase())) {
+      counter++
+    }
+  }
+
+  return counter
+}
+
+// Opposite Number
+
+const oppsiteNumber = (number) => {
+  return -number
+}
+
+// console.log(oppsiteNumber(-5))
+
+// Even Or Odd
+const checkEvenOrOdd = (num) => {
+  return num % 2 === 0 ? 'Even' : 'Odd'
+}
+
+// console.log(checkEvenOrOdd(8))
+// checkEvenOrOdd(7)
